@@ -1,13 +1,48 @@
+  
+/*especificiad: 10*/
+.par {font-style: italic; padding: 20px 10px; background-color: #710B3C;}
+.impar {font-stretch : expanded; padding: 8px 10px; background-color: #A7145B;}
+[class *= "par"]{font-family : "Arial", sans-serif; font-weight : bold;
+				color: white; margin-left: 5px;}
+.img {background-color:black;text-align:center;}
+.validation {margin: 20px;}
+
+/*especificiad: 100*/
+#titulo {background-color:#D32673; 
+      text-transform: uppercase;
+      padding: 100px 25px;
+      text-align: center;
+	  letter-spacing: 10px;
+	  border-radius: 0.5em;}
+	  
+/*especificiad: 1*/
+p, td {font: 13pt "Times New Roman",serif; margin: 10px;}
+th {font-size: 15pt; color: #4d0624}
+header {grid-area:header;}
+aside {grid-area: aside;border: solid ;color: #710B3C;} 
+main {grid-area:main;}
+footer {grid-area:footer;}
 body {
       font: 400 15px Tahoma, sans-serif;
       line-height: 1.8;
-      color: #000000;
-      background-color: #f6f6f6;
+      color: black;
+      background-color: white;
+	  text-align: justify;
+	  display: grid;
+	  grid-template-columns: 1fr 2fr;
+	  grid-template-areas: "header header"
+							"aside main"
+							"footer footer";
+		grid-row-gap: 20px;
+		grid-column-gap:20px;
   }
-h1 {
-      background-color:#CA2F57; 
-      color: #fff;
-      text-transform: uppercase;
-      padding: 100px 25px;
-      text-align: center;     
-  }
+
+/*especificiad: 2*/
+p::first-letter {font-size: 14pt} 
+ul li {font: 13pt "Times New Roman",serif; margin: 10px;}
+footer li {color: #4E0629;}
+nav li {font-family: "Georgia", serif;}
+
+/*espcificidad: 11*/
+a:link {color: #0A4087;}
+a:visited {color: #891649;}
